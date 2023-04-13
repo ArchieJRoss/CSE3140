@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Data Management</title>
+</head>
+<body>
+	<h1>Login Data Management</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Username</th>
+				<th>Password</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for login in login_data %}
+				<tr>
+					<td>{{ login[0] }}</td>
+					<td>{{ login[1] }}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
